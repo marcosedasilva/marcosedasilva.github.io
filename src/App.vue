@@ -9,9 +9,9 @@ import { Heart, Monitor, Cpu, GitBranch, User } from 'lucide-vue-next'
     
     <main class="flex-1 w-full block">
       <router-view v-slot="{ Component }">
-        <transition name="fade" mode="out-in">
+        <!-- <transition name="fade" mode="out-in"> -->
           <component :is="Component" :key="$route.path" />
-        </transition>
+        <!-- </transition> -->
       </router-view>
     </main>
 

@@ -38,7 +38,7 @@ onMounted(() => {
       <div class="hidden md:flex gap-6 text-sm font-medium tracking-widest uppercase">
         <router-link to="/resume" class="hover:text-brand transition">Currículo</router-link>
         <router-link to="/projects" class="hover:text-brand transition">Projetos</router-link>
-        <router-link to="/uses" class="hover:text-brand transition">Uses</router-link>
+        <router-link to="/uses" class="hover:text-brand transition">Setup</router-link>
       </div>
 
       <div class="flex items-center gap-4 border-l border-gray-800 pl-6">

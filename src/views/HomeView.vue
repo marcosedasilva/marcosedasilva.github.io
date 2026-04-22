@@ -1,6 +1,6 @@
 <script setup>
 import ZigZag from '../components/ZigZag.vue'
-import { Twitter, Github, Linkedin, Mail, Microscope, Database, BrainCircuit, Brain, FileBraces, File } from 'lucide-vue-next'
+import { Twitter, Github, Linkedin, Mail, Microscope, Database, BrainCircuit, Brain, FileBraces, File, FileText, MonitorCloud, PcCase } from 'lucide-vue-next'
 </script>
 
 <template>
@@ -47,6 +47,22 @@ import { Twitter, Github, Linkedin, Mail, Microscope, Database, BrainCircuit, Br
         <FileBraces :size="16" /> Python
       </div>
     </div>
+    
+    <section class="mt-16" id="social">
+      <h3 class="font-bold mb-6 uppercase tracking-widest text-sm text-gray-500">Sobre mim</h3>
+      <div class="flex flex-wrap gap-8 text-gray-400">
+        <a href="/resume_marcos_da_silva.pdf" target="_blank"
+          class="flex items-center gap-2 hover:text-white transition">
+          <FileText :size="20" /> Currículo
+        </a>
+        <router-link to="/projects" class="flex items-center gap-2 hover:text-white transition">
+          <MonitorCloud :size="20" /> Projetos
+        </router-link>
+        <router-link to="/uses" class="flex items-center gap-2 hover:text-white transition">
+          <PcCase :size="20" /> Setup
+        </router-link>
+      </div>
+    </section>
 
     <section class="mt-16" id="social">
       <h3 class="font-bold mb-6 uppercase tracking-widest text-sm text-gray-500">Me encontre em</h3>

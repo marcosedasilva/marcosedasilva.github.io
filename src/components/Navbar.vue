@@ -26,7 +26,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <nav class="max-w-4xl flex items-center justify-between py-8  mx-auto px-6">
+  <nav class="max-w-6xl flex items-center justify-between py-8  mx-auto px-6">
     <!-- Logo -->
     <router-link to="/" class="text-2xl font-bold tracking-tighter gap-4 flex ">
       <span class="text-brand">//</span>
@@ -37,7 +37,8 @@ onMounted(() => {
     <div class="flex items-center gap-6">
       <div class="hidden md:flex gap-6 text-sm font-medium tracking-widest uppercase">
         <router-link to="/resume" class="hover:text-brand transition">Currículo</router-link>
-        <a href="/#social" class="hover:text-brand transition">CONTATO</a>
+        <router-link to="/projects" class="hover:text-brand transition">Projetos</router-link>
+        <router-link to="/uses" class="hover:text-brand transition">Uses</router-link>
       </div>
 
       <div class="flex items-center gap-4 border-l border-gray-800 pl-6">

@@ -4,12 +4,12 @@ import { Twitter, Github, Linkedin, Mail, Microscope, Database, BrainCircuit, Br
 </script>
 
 <template>
-  <main class="max-w-2xl mx-auto px-6 pt-16 pb-24">
-    <h1 class="text-4xl md:text-4xl font-bold mb-6 leading-tight">
+  <main class="max-w-5xl mx-auto px-6 pt-16 pb-24">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
       Olá, me chamo <span class="text-brand">Marcos E. da Silva!</span>
     </h1>
 
-    <div class="space-y-6 text-lg text-gray-300 max-w-2xl leading-relaxed">
+    <div class="space-y-6 text-lg text-gray-300 max-w-5xl leading-relaxed">
       <p>
         Sou desenvolvedor de software <span class="underline decoration-brand">full-stack pleno</span>, com foco
         em backend
@@ -51,10 +51,9 @@ import { Twitter, Github, Linkedin, Mail, Microscope, Database, BrainCircuit, Br
     <section class="mt-16" id="social">
       <h3 class="font-bold mb-6 uppercase tracking-widest text-sm text-gray-500">Sobre mim</h3>
       <div class="flex flex-wrap gap-8 text-gray-400">
-        <a href="/resume_marcos_da_silva.pdf" target="_blank"
-          class="flex items-center gap-2 hover:text-white transition">
+        <router-link to="/resume" class="flex items-center gap-2 hover:text-white transition">
           <FileText :size="20" /> Currículo
-        </a>
+        </router-link>
         <router-link to="/projects" class="flex items-center gap-2 hover:text-white transition">
           <MonitorCloud :size="20" /> Projetos
         </router-link>

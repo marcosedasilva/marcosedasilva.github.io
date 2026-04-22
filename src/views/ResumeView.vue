@@ -68,6 +68,20 @@ const experiences = [
     ]
   },
   {
+    role: 'Engenheiro de Software (Estágio) | Python & Automação',
+    company: 'Corpo de Bombeiros Militar de Santa Catarina',
+    period: 'Nov. 2025 - Presente',
+    time: calculateInterval('2025-11-01', new Date().toISOString().split('T')[0]),
+    location: 'Florianópolis, SC',
+    description: [
+      'Foco na modernização de sistemas públicos através de automação e boas práticas de engenharia de software.',
+      'Automação com Python: Desenvolvimento de scripts para otimizar processos internos.',
+      'Backend: Manutenção e melhora de aplicações web usando Python e Javascript, garantindo escalabilidade, segurança e desempenho.',
+      'Metodologias Ágeis: Participação ativa em equipes Scrum/Kanban, utilizando Git para controle de versão.',
+      'Documentação do sistema: Auxiliei na criação de documentação técnica para APIs e processos internos, visando garantir a transferência de conhecimento e a confiabilidade do sistema.'
+    ]
+  },
+  {
     role: 'Missionário Voluntário (Liderança & Comunicação)',
     company: 'The Church of Jesus Christ of Latter-day Saints',
     period: 'Fev. 2022 - Jan. 2024',
@@ -122,7 +136,7 @@ const education = [
 </script>
 
 <template>
-  <div class="max-w-2xl mx-auto px-6 py-16">
+  <div class="max-w-5xl mx-auto px-6 py-16">
     <section>
       <div class="flex items-center gap-3 mb-4">
         <Sparkles class="text-brand animate-pulse" :size="32" />

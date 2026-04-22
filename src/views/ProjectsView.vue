@@ -37,7 +37,7 @@ const otherProjects = [
 </script>
 
 <template>
-  <div class="max-w-6xl mx-auto px-6 py-16">
+  <div class="max-w-5xl mx-auto px-6 py-16">
     <!-- Cabeçalho -->
     <section class="mb-12">
       <div class="flex items-center gap-3 mb-4">

@@ -44,7 +44,7 @@ const sections = [
 </script>
 
 <template>
-  <div class="max-w-2xl mx-auto px-6 py-16">
+  <div class="max-w-5xl mx-auto px-6 py-16">
     <section class="mb-12">
       <h1 class="text-4xl font-bold mb-4 italic">Setup</h1>
       <p class="text-gray-400 text-lg">

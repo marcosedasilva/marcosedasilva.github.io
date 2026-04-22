@@ -7,11 +7,14 @@ import { Heart, Monitor, Cpu, GitBranch, User } from 'lucide-vue-next'
   <div class="min-h-screen bg-dark-bg text-white font-sans selection:bg-brand selection:text-dark-bg">
     <Navbar />
     
-    <router-view v-slot="{ Component }">
-      <transition name="fade" mode="out-in">
-        <component :is="Component" />
-      </transition>
-    </router-view>
+    <main class="flex-1 w-full block">
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" :key="$route.path" />
+        </transition>
+      </router-view>
+    </main>
+
 
     <footer class="max-w-4xl mx-auto px-6 py-12 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-gray-400">
       <p>© 2026 - Feito com <Heart :size="14" class="inline text-red-500 fill-red-500" /> por Marcos E. da Silva</p>
@@ -27,6 +30,15 @@ import { Heart, Monitor, Cpu, GitBranch, User } from 'lucide-vue-next'
 </template>
 
 <style>
-.fade-enter-active, .fade-leave-active { transition: opacity 0.2s ease; }
-.fade-enter-from, .fade-leave-to { opacity: 0; }
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+main {
+  display: block;
+  width: 100%;
+}
 </style>

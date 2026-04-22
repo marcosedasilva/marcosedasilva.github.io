@@ -3,9 +3,7 @@
 @theme {
   --color-brand: var(--color-purple-500);
   --color-brand-muted: var(--color-purple-500 / 0.1);
-  
   --color-dark-bg: #0a1120;
-  --color-card-bg: #111827;
 }
 
 body {
@@ -13,11 +11,14 @@ body {
   color: #ffffff;
   margin: 0;
   font-family: 'Inter', sans-serif;
-  @apply bg-white text-gray-900 transition-colors duration-300;
+  
+  min-height: 100dvh; 
 }
 
-.dark body {
-  @apply bg-[#0a1120] text-white;
+#app {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
 
 ::-webkit-scrollbar {
